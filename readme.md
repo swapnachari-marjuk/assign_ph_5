@@ -1,4 +1,6 @@
-## Answer to the given question from PH ## 
+# Answer to the given question from PH 
+
+### Ans. to the question-1
 
 1. এগুলো সবগুলোই (getElementById, getElementsByClassName, and querySelector / querySelectorAll) সাধারণত DOM থেকে যে কোনো এলিমেনটকে পেতে ব্যবহৃত হয়। তবে প্রত্যেকটির আলাদা আলাদা বৈশিষ্ট্য আছে। নিম্নে বর্ণনা করা হলঃ
 - getElementById দ্বারা ডম থেকে আইডিবিশিষ্ট যে কোনো এলিমেন্টকে তার নির্ধারিত আইডি দ্বারা এক্সেস করা যায়। একই নামের যদি একাধিক আইডি থেকে থাকে তবে এক্ষেত্রে প্রথম এলিমেন্টকে এক্সেস করে বাকিগুলোকে ইগনোর করে।
