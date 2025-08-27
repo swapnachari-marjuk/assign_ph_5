@@ -26,7 +26,9 @@
     </style>
   </head>
   <body>
-    <header class="flex flex-col md:flex-row md:justify-between items-center p-4">
+    <header
+      class="flex flex-col md:flex-row md:justify-between items-center p-4"
+    >
       <div class="flex gap-2">
         <img src="./assets/logo.png" class="w-14" alt="logo" />
         <h3
@@ -64,7 +66,9 @@
           <div class="flex justify-center items-center">
             <img src="./assets/logo-dark.png" class="w-[92px]" alt="" />
           </div>
-          <h1 class="font-bold lg:text-4xl text-2xl">Emergency Service Directory</h1>
+          <h1 class="font-bold lg:text-4xl text-2xl">
+            Emergency Service Directory
+          </h1>
           <p>
             Government Emergency Services at Your Fingertip – A Project by
             Government of the People’s Republic of Bangladesh
@@ -75,7 +79,9 @@
       <section
         class="md:grid lg:grid-cols-12 md:grid-cols-6 pt-5 px-5 pb-7 gap-5 bg-[#41FF6B1A]"
       >
-        <div class=" card_container lg:col-span-9 md:col-span-4 grid lg:grid-cols-3 gap-8">
+        <div
+          class="card_container lg:col-span-9 md:col-span-4 grid lg:grid-cols-3 gap-8"
+        >
           <div class="cards bg-white p-8 leading-[2] rounded-xl">
             <div class="flex justify-between items-center">
               <img
@@ -100,9 +106,9 @@
                 </svg>
               </button>
             </div>
-            <h2 class="font-bold">National Emergency Number</h2>
+            <h2 id="national-emergency-title" class="font-bold">National Emergency Number</h2>
             <p class="text-gray-400">National Emergency Number</p>
-            <h2 class="font-semibold">999</h2>
+            <h2 id="national-emergency-phn-number" class="font-semibold">999</h2>
             <p class="bg-gray-200 rounded-md p-[4px] inline-block mb-4">
               Emergency
             </p>
@@ -113,7 +119,7 @@
               <img src="./assets/coppy.png" class="w-4 inline" alt="" />Copy
             </button>
             <button
-              class="bg-green-500 border-gray-300 border w-[45%] rounded-md"
+            id="call-national-emergency"  class="bg-green-500 border-gray-300 border w-[45%] rounded-md"
             >
               <img src="./assets/call.png" alt="" class="w-4 inline" />call
             </button>
@@ -142,9 +148,9 @@
                 </svg>
               </button>
             </div>
-            <h2 class="font-bold">Bangladesh Police</h2>
+            <h2 id="bangladesh-police-title" class="font-bold">Bangladesh Police</h2>
             <p class="text-gray-400">Bangladesh Police</p>
-            <h2 class="font-semibold">999</h2>
+            <h2 id="bangladesh-police-phn-number" class="font-semibold">999</h2>
             <p class="bg-gray-200 rounded-md p-[4px] inline-block mb-4">
               Police
             </p>
@@ -155,7 +161,7 @@
               <img src="./assets/coppy.png" class="w-4 inline" alt="" />Copy
             </button>
             <button
-              class="bg-green-500 border-gray-300 border w-[45%] rounded-md"
+            id="call-bangladesh-police" class="bg-green-500 border-gray-300 border w-[45%] rounded-md"
             >
               <img src="./assets/call.png" alt="" class="w-4 inline" />call
             </button>
@@ -185,8 +191,8 @@
               </button>
             </div>
             <h2 class="font-bold">Fire Service Number</h2>
-            <p class="text-gray-400">Fire Service</p>
-            <h2 class="font-semibold">999</h2>
+            <p id="fire-service-title" class="text-gray-400">Fire Service</p>
+            <h2 id="fire-service-phn-number" class="font-semibold">999</h2>
             <p class="bg-gray-200 rounded-md p-[4px] inline-block mb-4">
               Emergency
             </p>
@@ -197,9 +203,9 @@
               <img src="./assets/coppy.png" class="w-4 inline" alt="" />Copy
             </button>
             <button
-              class="bg-green-500 border-gray-300 border w-[45%] rounded-md"
+             id="call-fire-service" class="bg-green-500 border-gray-300 border w-[45%] rounded-md"
             >
-              <img src="./assets/call.png" alt="" class="w-4 inline" />call
+              <img  src="./assets/call.png" alt="" class="w-4 inline" />call
             </button>
           </div>
           <div class="cards bg-white p-8 leading-[2] rounded-xl">
@@ -226,9 +232,9 @@
                 </svg>
               </button>
             </div>
-            <h2 class="font-bold">Bangladesh Railway</h2>
+            <h2 id= "rail-way-title" class="font-bold">Bangladesh Railway</h2>
             <p class="text-gray-400">E-ticket</p>
-            <h2 class="font-semibold">131</h2>
+            <h2 id="rail-way-phn-number" class="font-semibold">131</h2>
             <p class="bg-gray-200 rounded-md p-[4px] inline-block mb-4">
               E-ticket
             </p>
@@ -239,7 +245,7 @@
               <img src="./assets/coppy.png" class="w-4 inline" alt="" />Copy
             </button>
             <button
-              class="bg-green-500 border-gray-300 border w-[45%] rounded-md"
+             id="call-rail-way" class="bg-green-500 border-gray-300 border w-[45%] rounded-md"
             >
               <img src="./assets/call.png" alt="" class="w-4 inline" />call
             </button>
@@ -269,8 +275,8 @@
               </button>
             </div>
             <h2 class="font-bold">Anti-Corruption Helpline</h2>
-            <p class="text-gray-400">ACC(Dudok)</p>
-            <h2 class="font-semibold">106</h2>
+            <p id="dudok-title" class="text-gray-400">ACC(Dudok)</p>
+            <h2 id="dudok-phn-number" class="font-semibold">106</h2>
             <p class="bg-gray-200 rounded-md p-[4px] inline-block mb-4">
               E-gov
             </p>
@@ -281,7 +287,7 @@
               <img src="./assets/coppy.png" class="w-4 inline" alt="" />Copy
             </button>
             <button
-              class="bg-green-500 border-gray-300 border w-[45%] rounded-md"
+            id="call-dudok"  class="bg-green-500 border-gray-300 border w-[45%] rounded-md"
             >
               <img src="./assets/call.png" alt="" class="w-4 inline" />call
             </button>
@@ -310,9 +316,9 @@
                 </svg>
               </button>
             </div>
-            <h2 class="font-bold">BRAC</h2>
+            <h2 id="brac-title" class="font-bold">BRAC</h2>
             <p class="text-gray-400">NGO</p>
-            <h2 class="font-semibold">999</h2>
+            <h2 id="brac-phn-number" class="font-semibold">88 02 2222 81265</h2>
             <p class="bg-gray-200 rounded-md p-[4px] inline-block mb-4">NGO</p>
             <br />
             <button
@@ -321,7 +327,7 @@
               <img src="./assets/coppy.png" class="w-4 inline" alt="" />Copy
             </button>
             <button
-              class="bg-green-500 border-gray-300 border w-[45%] rounded-md"
+             id="call-brac" class="bg-green-500 border-gray-300 border w-[45%] rounded-md"
             >
               <img src="./assets/call.png" alt="" class="w-4 inline" />call
             </button>
@@ -350,9 +356,9 @@
                 </svg>
               </button>
             </div>
-            <h2 class="font-bold">Emergency Ambulance</h2>
+            <h2 id="ambulance-title" class="font-bold">Emergency Ambulance</h2>
             <p class="text-gray-400">Health Care</p>
-            <h2 class="font-semibold">999</h2>
+            <h2 id="ambulance-phn-number" class="font-semibold">999</h2>
             <p class="bg-gray-200 rounded-md p-[4px] inline-block mb-4">
               Emergency
             </p>
@@ -363,7 +369,7 @@
               <img src="./assets/coppy.png" class="w-4 inline" alt="" />Copy
             </button>
             <button
-              class="bg-green-500 border-gray-300 border w-[45%] rounded-md"
+             id="call-ambulance" class="bg-green-500 border-gray-300 border w-[45%] rounded-md"
             >
               <img src="./assets/call.png" alt="" class="w-4 inline" />call
             </button>
@@ -473,7 +479,7 @@
             </div>
           </div>
 
-          <div class="history-boxes mt-5 flex flex-col gap-3 ">
+          <div class="history-boxes mt-5 flex flex-col gap-3">
             <div class="history">
               <div class="flex bg-gray-100 rounded-lg p-3">
                 <div>
@@ -505,5 +511,7 @@
         </div>
       </section>
     </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
