@@ -31,7 +31,7 @@ function callBtnHandler(id, tile, phnNumber) {
     const childDiv = document.createElement("div");
     childDiv.innerHTML = `
                 <div class="history">
-              <div class="flex bg-gray-100 rounded-lg p-3">
+              <div class="flex justify-between bg-gray-100 rounded-lg p-3">
                 <div>
                   <p class="font-semibold"> ${tile}</p>
                   <p >${phnNumber}</p>
@@ -94,21 +94,32 @@ callBtnHandler("call-ambulance", ambulanceTitle, ambulancePhone);
 // ambulance call
 const ambulanceTitle2 = document.getElementById("ambulance-title-2").innerText;
 const ambulancePhone2 = document.getElementById(
-  "ambulance-phn-number-2"
+  "wchelpline-phn-number"
 ).innerText;
 callBtnHandler("call-ambulance-2", ambulanceTitle2, ambulancePhone2);
 
 // ambulance call
 const ambulanceTitle3 = document.getElementById("ambulance-title-3").innerText;
 const ambulancePhone3 = document.getElementById(
-  "ambulance-phn-number-3"
+  "ambulance2-phn-number"
 ).innerText;
 callBtnHandler("call-ambulance-3", ambulanceTitle3, ambulancePhone3);
 
-
 // history clear button functionalities
 
-document.getElementById("clear-button").addEventListener("click",function(){
-  document.getElementById("history-boxes").innerText = ""
-  
-})
+document.getElementById("clear-button").addEventListener("click", function () {
+  document.getElementById("history-boxes").innerText = "";
+});
+
+// copy button function
+const copyBtns = document.getElementsByClassName("copy-btns");
+
+for (let btn of copyBtns) {
+  btn.addEventListener("click", function () {
+    const card = btn.closest(".cards");
+    const number = card.querySelector("h2[id$='phn-number']").innerText.trim();
+    navigator.clipboard.writeText(number).then(() => {
+      alert("Phone number copied: " + number);
+    });
+  });
+}
