@@ -25,6 +25,21 @@ function callBtnHandler(id, tile, phnNumber) {
     coinNum.innerText = newCoinNum;
 
     alert("Calling " + tile + " via this number: " + phnNumber);
+
+    const callTime = new Date().toLocaleString();
+    const parentDiv = document.getElementById("history-boxes");
+    const childDiv = document.createElement("div");
+    childDiv.innerHTML = `
+                <div class="history">
+              <div class="flex bg-gray-100 rounded-lg p-3">
+                <div>
+                  <p class="font-semibold"> ${tile}</p>
+                  <p >${phnNumber}</p>
+                </div>
+                <p>${callTime}</p>
+              </div>
+    `;
+    parentDiv.appendChild(childDiv);
   });
 }
 
@@ -47,63 +62,44 @@ const policePhone = document.getElementById(
 callBtnHandler("call-bangladesh-police", policeTitle, policePhone);
 
 // fire sevice call
-const fireServiceTitle = document.getElementById(
-  "fire-service-title"
-).innerText;
+const fireServiceTitle =
+  document.getElementById("fire-service-title").innerText;
 const fireServicePhone = document.getElementById(
   "fire-service-phn-number"
 ).innerText;
 callBtnHandler("call-fire-service", fireServiceTitle, fireServicePhone);
 
-// railway call 
-const railWayTitle = document.getElementById(
-  "rail-way-title"
-).innerText;
-const railwayPhone = document.getElementById(
-  "rail-way-phn-number"
-).innerText;
+// railway call
+const railWayTitle = document.getElementById("rail-way-title").innerText;
+const railwayPhone = document.getElementById("rail-way-phn-number").innerText;
 callBtnHandler("call-rail-way", railWayTitle, railwayPhone);
 
-// dudok call 
-const dudokTitle = document.getElementById(
-  "dudok-title"
-).innerText;
-const duodkPhone = document.getElementById(
-  "dudok-phn-number"
-).innerText;
+// dudok call
+const dudokTitle = document.getElementById("dudok-title").innerText;
+const duodkPhone = document.getElementById("dudok-phn-number").innerText;
 callBtnHandler("call-dudok", dudokTitle, duodkPhone);
 
-// brac call 
-const bracTitle = document.getElementById(
-  "brac-title"
-).innerText;
-const bracPhone = document.getElementById(
-  "brac-phn-number"
-).innerText;
+// brac call
+const bracTitle = document.getElementById("brac-title").innerText;
+const bracPhone = document.getElementById("brac-phn-number").innerText;
 callBtnHandler("call-brac", bracTitle, bracPhone);
 
 // ambulance call
-const ambulanceTitle = document.getElementById(
-  "ambulance-title"
-).innerText;
+const ambulanceTitle = document.getElementById("ambulance-title").innerText;
 const ambulancePhone = document.getElementById(
   "ambulance-phn-number"
 ).innerText;
 callBtnHandler("call-ambulance", ambulanceTitle, ambulancePhone);
 
 // ambulance call
-const ambulanceTitle2 = document.getElementById(
-  "ambulance-title-2"
-).innerText;
+const ambulanceTitle2 = document.getElementById("ambulance-title-2").innerText;
 const ambulancePhone2 = document.getElementById(
   "ambulance-phn-number-2"
 ).innerText;
 callBtnHandler("call-ambulance-2", ambulanceTitle2, ambulancePhone2);
 
 // ambulance call
-const ambulanceTitle3 = document.getElementById(
-  "ambulance-title-3"
-).innerText;
+const ambulanceTitle3 = document.getElementById("ambulance-title-3").innerText;
 const ambulancePhone3 = document.getElementById(
   "ambulance-phn-number-3"
 ).innerText;
