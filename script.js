@@ -104,3 +104,11 @@ const ambulancePhone3 = document.getElementById(
   "ambulance-phn-number-3"
 ).innerText;
 callBtnHandler("call-ambulance-3", ambulanceTitle3, ambulancePhone3);
+
+
+// history clear button functionalities
+
+document.getElementById("clear-button").addEventListener("click",function(){
+  document.getElementById("history-boxes").innerText = ""
+  
+})
