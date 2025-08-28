@@ -82,7 +82,7 @@ const bracPhone = document.getElementById(
 ).innerText;
 callBtnHandler("call-brac", bracTitle, bracPhone);
 
-// brac call 
+// ambulance call
 const ambulanceTitle = document.getElementById(
   "ambulance-title"
 ).innerText;
@@ -90,3 +90,21 @@ const ambulancePhone = document.getElementById(
   "ambulance-phn-number"
 ).innerText;
 callBtnHandler("call-ambulance", ambulanceTitle, ambulancePhone);
+
+// ambulance call
+const ambulanceTitle2 = document.getElementById(
+  "ambulance-title-2"
+).innerText;
+const ambulancePhone2 = document.getElementById(
+  "ambulance-phn-number-2"
+).innerText;
+callBtnHandler("call-ambulance-2", ambulanceTitle2, ambulancePhone2);
+
+// ambulance call
+const ambulanceTitle3 = document.getElementById(
+  "ambulance-title-3"
+).innerText;
+const ambulancePhone3 = document.getElementById(
+  "ambulance-phn-number-3"
+).innerText;
+callBtnHandler("call-ambulance-3", ambulanceTitle3, ambulancePhone3);
